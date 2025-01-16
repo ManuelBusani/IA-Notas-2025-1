@@ -47,4 +47,8 @@ Un entorno es **continuo** cuando los subespacios son continuos, por ejemplo con
 * ***Un agente / Multiagente***
 * ***Episódico / Secuencial***
 
-### 
+### Por hacer
+
+Un agente recibe como entrada **percepciones** y devuelve como salida una **acción**.
+
+![](../imagenes/1agente.png)
