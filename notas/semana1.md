@@ -6,7 +6,7 @@ Se plantea un ***entorno***, el cual tiene un cierto *estado*, el ***agente*** b
 
 > A cada instante en el tiempo se le asigna un estado, acción y percepción.
 
-![](../imagenes/1algo.png)
+![](../imagenes/1modelo.png)
 
 ### Ejemplo
 
@@ -36,19 +36,37 @@ Como ejemplo de juguete, se tiene un robot roomba limpia suelos encargado de lim
 * ***Discreto / continuo***  
   Un entorno es **discreto** cuando los *subespacios* son discretos, como en el ejemplo de juguete.   
 Un entorno es **continuo** cuando los subespacios son continuos, por ejemplo con números reales.
-> No estoy seguro como definir subespacio.
 
 * ***Estático / Dinámico***  
+Si el entorno puede cambiar cuando un agente está tomando una decisión entonces el entorno es **dinámico** para dicho agente, en otro caso si el agente se puede tomar todo el tiempo del mundo es **estático**. 
+
+>Cuando el transcurso del tiempo no cambia el entorno pero si la utilidad del agente entonces se le llama *semidinámico*.
+
   Un entorno es **estático** cuando el estado del entorno depende solo de las acciones del agente, en otro caso es **Dinámico**.
 
 * ***Observable / Parcialmente Observable***  
+Un entorno es **observable** cuando el agente tiene acceso completo al estado del entorno en todo momento, si no se tiene acceso se le llama *inobservable*, en otro caso es **parcialmente observable**.
+
 * ***Determinista / Estocástico***  
-* ***Conocido / Desconocido***
-* ***Un agente / Multiagente***
-* ***Episódico / Secuencial***
+  Un entorno es **determinista** cuando el estado del entorno depende solo de las acciones del agente y el estado del entorno, en otro caso es **estocástico**. 
+ > Cabe mencionar que hay casos en los que se puede preferir hacer un modelo estocástico aunque éste sea determinista por que es menos trabajoso o por ignorancia.
 
-### Por hacer
 
-Un agente recibe como entrada **percepciones** y devuelve como salida una **acción**.
+* ***Conocido / Desconocido***  
+Un entorno es **conocido** cuando el agente sabe las consecuencias o posibles consecuencias de realizar una acción, en otro caso es **desconocido**.
+
+* ***Un agente / Multiagente***  
+Cuando se involucran más de un agente se le llama **multiagente**, si es solo uno es de **un agente**.
+
+* ***Episódico / Secuencial***  
+Un entorno **episódico** se divide en episodios, en cada episodio el agente recibe una percepción y realiza una acción, las acciones de un episodio no dependen de las acciones anteriores.  
+Por otro lado en un entorno **secuencial** las acciones pueden afectar acciones futuras.
+
+
+### Función de agente
+
+Un agente recibe como entrada **percepciones**, hasta un cierto tiempo, y devuelve como salida una **acción**.
+
+> En la práctica el preprocesamiento y postprocesamiento de datos es lo más tardado.
 
 ![](../imagenes/1agente.png)
