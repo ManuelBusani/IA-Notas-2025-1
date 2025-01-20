@@ -63,10 +63,17 @@ Un entorno **episódico** se divide en episodios, en cada episodio el agente rec
 Por otro lado en un entorno **secuencial** las acciones pueden afectar acciones futuras.
 
 
-### Función de agente
+### Agentes
 
 Un agente recibe como entrada **percepciones**, hasta un cierto tiempo, y devuelve como salida una **acción**.
 
 > En la práctica el preprocesamiento y postprocesamiento de datos es lo más tardado.
 
 ![](../imagenes/1agente.png)
+
+* Agentes reactivos  
+* Agentes basados en historia  
+* Agentes basados en modelos  
+* Agentes basados en objetivos  
+* Agentes basados en utilidad  
+* Agentes que aprenden
