@@ -11,6 +11,10 @@ Un error que es una variable aleatoria de distribución desconocida.
 
 E<sub>in</sub>, E<sub>out</sub>, función h.  
 
-Hay aprendizaje cuando ...  
+Hay aprendizaje cuando:
+* E<sub>in</sub>(h) approx 0
+* E<sub>in</sub>(h) approx E<sub>out</sub>(h)
 
-Mejorar la confianza a cambio de aumentar el error.
+Mejorar la confianza a cambio de aumentar el error.  
+
+f approx h iff Eout(h) approx 0
