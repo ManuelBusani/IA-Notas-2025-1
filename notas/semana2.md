@@ -9,7 +9,13 @@ Tenemos una muestra de datos con distribución desconocida.
 
 Un error que es una variable aleatoria de distribución desconocida.
 
-E<sub>in</sub>, E<sub>out</sub>, función h.  
+E<sub>in</sub>:  
+Error en la muestra.
+ 
+E<sub>out</sub>:  
+Error ...
+
+función h.  
 
 Hay aprendizaje cuando:
 * E<sub>in</sub>(h) approx 0
@@ -18,3 +24,5 @@ Hay aprendizaje cuando:
 Mejorar la confianza a cambio de aumentar el error.  
 
 f approx h iff Eout(h) approx 0
+
+Función de crecimiento
