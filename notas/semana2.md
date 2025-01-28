@@ -32,8 +32,18 @@ Se necesita 10 veces la dimensión VC para asegurar que haya aprendizaje.
 
 ## Arboles de decisión
 Explican los datos segun sus atributos.
+![](../imagenes/2arbolDecision.png)
 
 ### Entropía
-Se usa para elegir con que atributo dividir el árbol.
+![alt text?](../imagenes/2entropia.png)
 
-H(Y) = -sum{P(Y=y<sub>i</sub>)*log<sub>2</sub>P(Y=y<sub>i</sub>)}
+Indica que tan desordenada está una variable aleatoria.
+
+### Entropía condicional
+![alt text?](../imagenes/2entropiaCond.png)
+Entropía de la variable Y condicionada con la variable X.
+
+Usamos la entropía para decidir con que atributo dividir el árbol en un nodo de manera que esté menos desordenado.  
+
+### Ganancia de información
+Es que tanto disminuye la entropía después de dividir el arbol, elegimos un atributo con el cual dividir el árbol buscando maximizar la ganancia de información.
