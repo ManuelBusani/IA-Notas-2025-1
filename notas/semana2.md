@@ -31,7 +31,7 @@ Dimensión VC, es el número de parámetros.
 Se necesita 10 veces la dimensión VC para asegurar que haya aprendizaje.
 
 ## Arboles de decisión
-Explican los datos segun sus atributos.
+Explican los datos según sus atributos.
 ![](../imagenes/2arbolDecision.png)
 
 ### Entropía
