@@ -4,4 +4,4 @@
 ## Descripción
 Notas personales para la clase de inteligencia artificial del semestre 2025-1.
 
-En el directorio `notas` se encuentran archivos de markdown de las notas de clase organizados por semana.
+En el directorio `notas` se encuentran archivos de markdown de las notas de clase, las primeras organizadas por semana y las demás por tema.
