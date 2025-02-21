@@ -6,13 +6,14 @@ Modelamos un grafo donde los nodos son un estado y las aristas son las acciones.
 
 Analizamos los nodos para ver a que otros nodos podemos llegar al realizar acciones legales.
 
+Se guarda en una *frontera* los 
+nodos no explorados.
+
 **Plan**: Secuencia de acciones
 
-### Busqueda a lo profundo (DFS)
+### Depth First Search (DFS) / A lo profundo
 
-Clasificamos los nodos en explorados y no explorados.
-
-Se usa una pila LIFO como *frontera* de nodos, agregamos los nodos adyacentes a la frontera y seguimos expandiendo con el último que fue agregado.
+La frontera se implementa con una **pila** (una estructura **LIFO**) y se expande checando el tope de la pila, o sea el último elemento.
 
 ![](../imagenes/busquedas/DFS.png)  
 **Orden en el que se checan los nodos**
@@ -32,8 +33,23 @@ procedure DFS_iterative(G, v) is
                     S.push(w)
 ```
 
+
+### Breadth First Search (BFS) / A lo ancho
+
+La frontera se implementa con una **cola** (una estructura **FIFO**) y se expande checando el elemento que lleva más tiempo en la cola.
+
+![](../imagenes/busquedas/BFS.png)  
+
+```
+por poner
+```
+
+### Uniform Cost Search (UCS) / Costo uniforme
+c(n)
 ...
-
-### Busqueda a lo ancho
-
-![](../imagenes/busquedas/DFS.png)  
+### Algoritmo Greedy
+h(n)
+...
+### A* / A estrella / A-sterisco
+c(n)+h(n)
+...
