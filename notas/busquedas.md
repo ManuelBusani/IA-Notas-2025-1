@@ -29,11 +29,29 @@ La frontera se implementa con una **cola** (una estructura **FIFO**) y se expand
 
 
 ### Uniform Cost Search (UCS) / Costo uniforme
-c(n)
-...
+La frontera se implementa con una cola de prioridad, se va expandiendo el nodo con el menor **costo**.
+
+
+### Heurísticas
+Una heurística es un estimado de que tan cerca está un estado de la meta, lo usamos para reducir el número de nodos que checamos.
+
+Con UCS se checan todos los posibles planes que tienen un costo menor al plan óptimo que lleva a la meta, esto puede ser muy costoso, por eso se usa una heurística para reducir el número de estados.
+
+Hay que tener en cuenta que con una heurística no encontramos el mejor plan, pero encontramos un plan lo suficientemente bueno con el que nos conformamos.
+
+Una heurística es **admisible** si **h(n) <= h*(n)**, donde *h(n)* es la heurística que se estima en un nodo *n* y *h*(n)* es el costo verdadero a la meta con un plan óptimo.
+
 ### Algoritmo Greedy
-h(n)
-...
-### A* / A estrella / A-sterisco
-c(n)+h(n)
-...
+La frontera se implementa con una cola de prioridad, se va expandiendo el nodo con la menor heurística.
+
+### A*
+La frontera se implementa con una cola de prioridad, se va expandiendo con la menor suma del costo y la heurística.
+
+
+### Resumido
+- **DFS** usa una cola y expande el **primero**
+- **BFS** usa una pila y expande el **último**
+- Con una cola de prioridad:
+	+ UCS expande el que tenga menor **costo**.
+	+ Greedy el que tenga menor **heurística**.
+	+ A*: **c(n)+h(n)**
