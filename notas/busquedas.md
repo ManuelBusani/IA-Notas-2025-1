@@ -52,6 +52,6 @@ La frontera se implementa con una cola de prioridad, se va expandiendo con la me
 - **DFS** usa una cola y expande el **primero**
 - **BFS** usa una pila y expande el **último**
 - Con una cola de prioridad:
-	+ UCS expande el que tenga menor **costo**.
-	+ Greedy el que tenga menor **heurística**.
-	+ A*: **c(n)+h(n)**
+	+ **UCS** expande el que tenga menor **costo**.
+	+ **Greedy** el que tenga menor **heurística**.
+	+ **A***: **c(n)+h(n)**
