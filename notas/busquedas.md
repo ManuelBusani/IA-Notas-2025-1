@@ -41,6 +41,8 @@ Hay que tener en cuenta que con una heurística no encontramos el mejor plan, pe
 
 Una heurística es **admisible** si **h(n) <= h*(n)**, donde *h(n)* es la heurística que se estima en un nodo *n* y *h*(n)* es el costo verdadero a la meta con un plan óptimo.
 
+![](../imagenes/busquedas/dominance.png)
+
 ### Algoritmo Greedy
 La frontera se implementa con una cola de prioridad, se va expandiendo el nodo con la menor heurística.
 
