@@ -83,3 +83,11 @@ def min-valor(estado , α, β):
 		β = min(β, v)
 	return v
 ```
+
+### Negamax
+Basicamente min-max pero haciendo el código más corto y bonito reemplazando $min(x,y)$ con $-min(-x,-y)$
+
+### Funciones de evaluación
+No siempre es práctico checar hasta las hojas para evaluar el valor de un nodo, en su lugar se puede checar hasta una cierta profundidad máxima y usar una **función de evaluación** para aproximar el valor que se obtendría con min-max de un nodo no terminal.
+
+Por ejemplo en ajedrez una función de evaluación puede tomar en cuenta la ventaja material, peones pasados, cadenas de peones, que tan desarrolladas están las piezas, etc. Usando estos parámetros se puede aproximar la ventaja de un jugador.
