@@ -12,7 +12,7 @@
 ### Modelo
 * P := 'conjunto de jugadores' 
 * S := 'conjunto de estados'
-* s<sub>0</sub> := 'el estado inicial', tal que s<sub>0</sub> ∈ S
+* s<sub>0</sub> := 'el estado inicial', tal que s<sub>0</sub> $\in$ S
 * A := conjunto de acciones
 * Acciones legales: S x P ⇾ P(A)
 * Transición: S x A x P ⇾ S
@@ -85,7 +85,7 @@ def min-valor(estado , α, β):
 ```
 
 ### Negamax
-Basicamente min-max pero haciendo el código más corto y bonito reemplazando $min(x,y)$ con $-min(-x,-y)$
+Basicamente min-max pero haciendo el código más corto y bonito reemplazando $min(\alpha,\beta)$ con $-min(-\alpha,-\beta)$
 
 ### Funciones de evaluación
 No siempre es práctico checar hasta las hojas para evaluar el valor de un nodo, en su lugar se puede checar hasta una cierta profundidad máxima y usar una **función de evaluación** para aproximar el valor que se obtendría con min-max de un nodo no terminal.
