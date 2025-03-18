@@ -84,6 +84,8 @@ def min-valor(estado , α, β):
 	return v
 ```
 
+Cuando las acciones están ordenadas con una heurística de manera que se cheque primero las "mejores" acciones se hacen podaciones antes.
+
 ### Negamax
 Basicamente min-max pero haciendo el código más corto y bonito reemplazando $min(\alpha,\beta)$ con $-min(-\alpha,-\beta)$
 
