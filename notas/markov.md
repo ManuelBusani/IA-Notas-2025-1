@@ -45,8 +45,11 @@ $\pi^*$ es la política que maximiza la esperanza de $R_t$, se considera la mejo
 
 $V^{\pi}(S)$ se usa para comparar políticas, donde:  
 
-* $\pi_1 \geq \pi_2 \iff V^{\pi_1}(S) \geq V^{\pi_2}(S) ~\forall s \in S$ 
+* $\pi_1 \geq \pi_2 \iff V^{\pi_1}(s) \geq V^{\pi_2}(s) ~\forall s \in S$ 
 
-* $V^{\pi}(S) = E[R_t | S_t = s] = \sum_{s'\in\Omega}T(s,\pi(s),s')[r(s,\pi(s),s')+\gamma V^{\pi}(s')]$
+* $V^{\pi}(s) = E[R_t | S_t = s] = \sum_{s'\in\Omega}T(s,\pi(s),s')[r(s,\pi(s),s')+\gamma V^{\pi}(s')]$
 
-* $V^{\pi^*}(S)\equiv V^*(S)$
+* $V^{\pi^*}(s)\equiv V^*(S)$
+
+### Q-learning
+Se define $Q_{\pi}(s,a)$ como la utilidad esperada de tomar una acción $a$ en un estado $s$ y luego seguir la política $\pi$.
